@@ -101,8 +101,11 @@ y = 42 + " é a resposta" // "42 é a resposta"
 Nas declarações envolvendo outros operadores, JavaScript não converte valores numérico para strings. Por exemplo:
 
 ```javascript
-"37" - 7 // 30
-"37" + 7 // "377"
+let subtracao = "37" - 7;
+console.log(subtracao); // 30
+
+let soma = "37" + 7;
+console.log(soma); // "377"
 ```
 
 ### Convertendo strings para números
@@ -110,19 +113,35 @@ Nas declarações envolvendo outros operadores, JavaScript não converte valores
 No caso de um valor que representa um número está armazenado na memória como uma string, existem métodos para a conversão.
 
 ```javascript
-parseInt()
-parseFloat()
+let idade = parseInt("43");
+console.log(idade); // 43
+
+let altura = parseFloat("1.77");
+console.log(altura); // 1.77
 ```
 
 parseInt irá retornar apenas números inteiros, então seu uso é restrito para a casa dos decimais. Além disso, é uma boa prática ao usar parseInt incluir o parâmetro da base. O parâmetro da base é usado para especificar qual sistema númerico deve ser usado.
 
-Uma método alternativo de conversão de um número em forma de string é com o operador + (operador soma):
-
 ```javascript
-"1.1" + "1.1" = "1.11.1"
-(+"1.1") + (+"1.1") = 2.2
-
-// Nota: Os parênteses foram usados para deixar mais legível o código, eles não são requiridos.
+let temperatura = parseInt("37.3");
+console.log(temperatura); // 37
 ```
 
+Utilizando `parseInt` podemos fazer a soma entre uma string e um número sem realizar a concatenação:
 
+```javascript
+let soma = parseInt("37") + 7;
+console.log(soma); // 44
+```
+
+### Convertendo números para strings
+
+```javascript
+let idade = String(43);
+console.log(idade); //43
+console.log(typeof idade); // string
+
+let temperatura = String(37.3);
+console.log(temperatura); // 37.3
+console.log(typeof temperatura); // string
+```
