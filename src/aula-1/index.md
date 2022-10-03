@@ -145,3 +145,11 @@ let temperatura = String(37.3);
 console.log(temperatura); // 37.3
 console.log(typeof temperatura); // string
 ```
+
+---
+
+Este material faz parte do material de apoio do Curso de Introdução à Programação, ministrado gratuitamente por [@marcelsud](https://linkedin.com/in/marcelsud/).
+
+![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png "CC BY-NC-SA | Attribution-NonCommercial-ShareAlike ")
+
+---
