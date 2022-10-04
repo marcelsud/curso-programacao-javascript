@@ -159,11 +159,13 @@ let frutas = ['Maçã', 'Banana'];
 
 ### Contando quantos items existem em um Array
 
+Para saber a quantidade de itens, utilizamos a propriedade `length`
+
 ```javascript
 console.log(frutas.length); // 2
 ```
 
-### Acessar um item (index) do Array
+### Acessar um item (pelo índice ou posição) do Array
 
 ```javascript
 let primeiro = frutas[0];
@@ -175,12 +177,16 @@ console.log(ultimo); // Banana
 
 ### Adicionar um item ao final do Array
 
+O método `push()` adiciona um ou mais elementos ao final de um array e retorna o novo tamanho desse array.
+
 ```javascript
 frutas.push('Laranja');
 console.log(frutas); //['Maçã', 'Banana', 'Laranja']
 ```
 
 ### Remover um item do final do Array
+
+O método `pop()` remove o último elemento de um array e retorna aquele valor. Este método muda o tamanho do array.
 
 ```javascript
 var ultimo = frutas.pop(); // remove Laranja (do final)
@@ -190,15 +196,20 @@ console.log(frutas); // ['Maçã', 'Banana']
 
 ### Remover do início do Array
 
+O método `shift()` remove o primeiro elemento de um array e retorna esse elemento. Este método muda o tamanho do array.
+
 ```javascript
 var primeiro = frutas.shift(); // remove Maçã do início
+console.log(primeiro); // 'Maçã'
 console.log(frutas); // ['Banana']
 ```
 
 ### Adicionar ao início do Array
 
+O método `unshift()` adiciona um ou mais elementos no início de um array.
+
 ```javascript
-var adicionar = frutas.unshift('Morango') // adiciona ao início
+frutas.unshift('Morango') // adiciona ao início
 console.log(frutas); // ['Morango', 'Banana']
 ```
 
