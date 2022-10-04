@@ -146,6 +146,104 @@ console.log(temperatura); // 37.3
 console.log(typeof temperatura); // string
 ```
 
+
+## Array (Vetores)
+
+O objeto `Array` do JavaScript é um objeto global usado na construção de 'arrays' (ou vetores): objetos de alto nível semelhantes a listas
+
+### Criando um Array
+
+```javascript
+let frutas = ['Maçã', 'Banana'];
+```
+
+### Contando quantos items existem em um Array
+
+```javascript
+console.log(frutas.length); // 2
+```
+
+### Acessar um item (index) do Array
+
+```javascript
+let primeiro = frutas[0];
+console.log(primeiro); // Maçã
+
+let ultimo = frutas[frutas.length - 1];
+console.log(ultimo); // Banana
+```
+
+### Adicionar um item ao final do Array
+
+```javascript
+frutas.push('Laranja');
+console.log(frutas); //['Maçã', 'Banana', 'Laranja']
+```
+
+### Remover um item do final do Array
+
+```javascript
+var ultimo = frutas.pop(); // remove Laranja (do final)
+console.log(ultimo); // 'Laranja'
+console.log(frutas); // ['Maçã', 'Banana']
+```
+
+### Remover do início do Array
+
+```javascript
+var primeiro = frutas.shift(); // remove Maçã do início
+console.log(frutas); // ['Banana']
+```
+
+### Adicionar ao início do Array
+
+```javascript
+var adicionar = frutas.unshift('Morango') // adiciona ao início
+console.log(frutas); // ['Morango', 'Banana']
+```
+
+### Procurar o índice de um item na Array
+
+```javascript
+frutas.push('Manga');
+// ['Morango', 'Banana', 'Manga']
+
+var pos = frutas.indexOf('Banana');
+console.log(pos); // 1
+```
+
+### Remover um item pela posição do índice
+
+```javascript
+var removedItem = frutas.splice(pos, 1); // é assim que se remove um item
+console.log(frutas); // ['Morango', 'Manga']
+```
+
+### Remover itens de uma posição de índice
+
+```javascript
+var vegetais = ['Repolho', 'Nabo', 'Rabanete', 'Cenoura'];
+console.log(vegetais);
+// ['Repolho', 'Nabo', 'Rabanete', 'Cenoura']
+
+var pos = 1, n = 2;
+
+var itensRemovidos = vegetais.splice(pos, n);
+// Isso é como se faz para remover itens, n define o número de itens a se remover,
+// a partir da posição (pos) em direção ao fim da array.
+
+console.log(vegetais);
+// ['Repolho', 'Cenoura'] (o array original é alterado)
+
+console.log(itensRemovidos);
+// ['Nabo', 'Rabanete']
+
+Copiar um Array
+
+var copia = frutas.slice(); // é assim que se copia
+// ['Morango', 'Manga']
+```
+
 ---
 
 Este material faz parte do material de apoio do Curso de Introdução à Programação, ministrado gratuitamente por [@marcelsud](https://linkedin.com/in/marcelsud/).
