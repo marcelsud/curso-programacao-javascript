@@ -3,7 +3,7 @@
 
 Material de apoio:
 - [Slides](https://docs.google.com/presentation/d/1BKhzvznM5zCcBfiT-xAIrTUB77ZQSkj26jPnuNh2hvI/edit?usp=sharing)
-- [Exercícios](https://curso.devcodando.com/aula-1/exercicios)
+- [Exercícios](https://devcodando.com/curso-javascript/aula-1/exercicios)
 
 ## Sintaxe básica
 
